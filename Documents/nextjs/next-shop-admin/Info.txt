@@ -1,0 +1,74 @@
+Next JS
+--------
+js
+
+npx create-next-app next-shop-admin
+y
+npm run dev
+
+ESLint, Prettier y JSConfig
+--------------------------
+npm i eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-prettier prettier -D
+
+- crear el archivo .eslintrc.js
+- crear el archivo prettier.config.js
+
+Agregamos en package.json para tratar de agregar algunos errores de forma automatica
+----------------------------------
+En scripts:
+"lint:fix": "eslint src/ --fix"
+
+Revisar el proyecto si tiene errores
+-----------------------------------
+npm run lint
+npm run lint:fix
+
+
+Instalar TailwindCss y postCss
+------------------------------
+npm install -D tailwindcss postcss autoprefixer
+
+Agregar archivo tailwinds de forma automatica:
+npx tailwindcss init -p
+
+crear archivo jsconfig.json para agregar alias
+--------------------------------------------
+
+
+Instalar iconos y botones (UI para nuestros proyectos)
+-----------------------------------------------------
+npm install @heroicons/react
+npm install @headlessui/react
+
+
+
+
+Instalar recursos para trabajar con cookies
+------------------------------------------
+npm install js-cookie
+
+npm install axios   // Para trabajar mejor con post, get
+
+
+Instalando ChartJS
+-------------------
+npm i chart.js react-chartjs-2
+
+Instalar plugin para forms de tailwind
+------------------------------------
+npm install @tailwindcss/forms
+
+Luego agregar en la seccion de plugins de tailwind.config.js
+
+
+Para validacion de formularios con react-hook-form
+---------------------------------------------------
+npm install react-hook-form joi
+
+
+Comprobar si nuestros proyecto cumple con el standar y mandarlo a producción
+-------------------------------------------------------------------
+npm run build
+
+npm run lint:fix
+
